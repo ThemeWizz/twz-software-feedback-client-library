@@ -1,0 +1,31 @@
+.twz-software-deactivate-dialog
+{
+	text-align: left;
+	width: auto;
+}
+
+.twz-software-deactivate-dialog-buttons
+{
+	text-align: right;
+	margin-top: 40px;
+}
+
+.twz-software-deactivate-dialog
+{
+	width: auto !important;
+}
+
+.twz-software-deactivate-dialog h2
+{
+	color: gray;
+	font-variant: small-caps;
+	font-size: 1.2em;
+	padding-bottom: 0.2em;
+	border-bottom: 1px solid lightgray;
+	
+}
+
+.twz-software-deactivate-dialog input[name="comments"]
+{
+	width: 415px;
+}
