@@ -1,8 +1,12 @@
 {
     "name": "themewizz/twz-software-feedback-client-library",
     "type": "library",
-    "description": "Collecting plugin daya and reporting plugin usage to developers.",
-    "keywords": ["plugin usage", "feedback", "tracking"],
+    "description": "Collecting plugin data and reporting plugin usage to developers.",
+    "keywords": [
+        "plugin usage",
+        "feedback",
+        "tracking"
+    ],
     "homepage": "https://github.com/themewizz/twz-software-feedback-client-library",
     "license": "Apache-2.0",
     "authors": [
@@ -17,6 +21,8 @@
         "php": ">=8.1"
     },
     "autoload": {
-        "files": ["src/twz_software_feedback_client_library.php"]      
+        "psr-4": {
+            "themewizz\\feedback\\": "src/"
+        }
     }
 }
