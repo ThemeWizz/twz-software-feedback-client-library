@@ -7,6 +7,7 @@ use function WPML\FP\Strings\replace;
 abstract class TWZ_Software_Feedback_Client
 {
 	protected $server_url = '';
+	protected $plugin_name = '';
 	protected $plugin_slug = '';
 	protected $plugin_version = '';
 
@@ -49,7 +50,7 @@ abstract class TWZ_Software_Feedback_Client
 		<div id='<?php echo $this->plugin_slug; ?>-software-deactivate-dialog' class='twz-software-deactivate-dialog' data-remodal-id='<?php echo $this->plugin_slug; ?>'>
 			<form>
 				<input type='hidden' name='action' value='twz_software_deactivate_feedback'>
-				<input type='hidden' name='title' value='Deactivation'>
+				<input type='hidden' name='title' value='<?php echo $this->plugin_name; ?>'>
 				<input type='hidden' name='twz_plugin_slug' value='<?php echo $this->plugin_slug; ?>'>
 				<input type='hidden' name='twz_plugin_version' value='<?php echo $this->plugin_version; ?>'>
 				<input type='hidden' name='twz_plugin_home_url' value='<?php echo home_url(); ?>'>
