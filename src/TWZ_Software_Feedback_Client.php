@@ -192,7 +192,7 @@ abstract class TWZ_Software_Feedback_Client
 
 					$(element).find("button, input[type='submit']").prop("disabled", true);
 
-					if ($(element).find("input[name='reason']:checked").length) {
+					if ($(element).find("input[name='twz_plugin_reason']:checked").length) {
 						$(element).find("input[type='submit']").val('<?php echo $default_strings['thank_you']; ?>');
 
 						$.ajax({
@@ -220,6 +220,5 @@ abstract class TWZ_Software_Feedback_Client
 		</script>
 
 <?php
-		$s = '';
 	}
 }
